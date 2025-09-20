@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 4 - Forms</title>
+</head>
+<body>
+  <header>
+    <h1>Day 4 - Forms & Input Attributes</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Day 1</a></li>
+        <li><a href="about.html">Day 2</a></li>
+        <li><a href="course.html">Day 3</a></li>
+        <li><a href="contact.html">Day 4</a></li>
+        <li><a href="day5.html">Day 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="/submit" method="post" autocomplete="on">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="6" maxlength="12"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="100"><br><br>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" checked>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <p>Skills:</p>
+      <input type="checkbox" id="html" name="skills" value="HTML" checked> HTML
+      <input type="checkbox" id="css" name="skills" value="CSS"> CSS
+      <input type="checkbox" id="js" name="skills" value="JS"> JavaScript<br><br>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="india" selected>India</option>
+        <option value="usa">USA</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </main>
+
+  <footer><p>End of Day 4 Revision</p></footer>
+</body>
+</html>
